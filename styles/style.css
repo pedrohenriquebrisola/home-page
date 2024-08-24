@@ -64,8 +64,7 @@ body {
   font-size: 1.5rem;
 }
 .apresentacao__links__navegacao {
-  /* background-color: #22d4fd; */
-  position: relative; /* Adicione essa linha */
+  position: relative;
   display: flex;
   justify-content: center;
   gap: 16px;
@@ -81,17 +80,13 @@ body {
   font-weight: 600;
 }
 
-/* .apresentacao__links__link:hover {
-  background-color: #272727;
-} */
-
-.apresentacao__links__link:hover {
+.apresentacao__links__navegacao:hover {
   background-color: var(--cor-primaria);
-  border-radius: 0;
+  border-radius: 8px;
   scale: 1.1;
 }
 
-.apresentacao__links__link::after {
+.apresentacao__links__navegacao::after {
   content: '';
   background: #272727;
   width: 0;
@@ -100,9 +95,10 @@ body {
   inset: 0;
   transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
   z-index: -1;
+  border-radius: 8px;
 }
 
-.apresentacao__links__link:hover::after {
+.apresentacao__links__navegacao:hover::after {
   width: 100%;
 }
 
